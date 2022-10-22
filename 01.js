@@ -12,6 +12,16 @@ function soloNumeros(array) {
 
   // Tu código aca:
 
+  var arrayN=[];
+  var contador = 0;
+  for(var i = 0; i < array.length; i++){
+    if(typeof array[i] !== 'string'){
+      arrayN[contador]=array[i];
+      contador++;
+    }
+  }
+  return arrayN;
+
 }
 
 // No modifiques nada debajo de esta linea //
